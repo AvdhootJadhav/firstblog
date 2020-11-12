@@ -8,6 +8,12 @@
         <div>
             <h1><a href="/">AJ's Blogs</a></h1>
         </div>
+        {%for post in posts%}
+        <div>
+            <p>published:{{post.published_date}}</p>
+            <p>{{post.text|linebreaksbr}}</p>
+        </div>
+        {% endfor%}
         <div>
             <p>{{ posts }}</p>
             <h2><a href="/">My First Blog</a></h2>
